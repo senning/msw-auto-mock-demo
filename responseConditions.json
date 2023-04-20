@@ -1,0 +1,8 @@
+{
+  "/test-multiple-responses/:id": {
+    "get": {
+      "200": "!req.params.id.startsWith('bad')",
+      "404": "req.params.id == 'bad'"
+    }
+  }
+}
